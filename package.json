@@ -1,0 +1,52 @@
+{
+  "name": "po-translator-llm",
+  "version": "1.0.0",
+  "description": "A script to translate .po files using LLMs while preserving formatting and structure",
+  "type": "module",
+  "keywords": [
+    "po",
+    "translation",
+    "llm",
+    "openai",
+    "anthropic",
+    "gemini",
+    "i18n",
+    "localization"
+  ],
+  "homepage": "https://github.com/yagoveloso/po-translator-llm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagoveloso/po-translator-llm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yagoveloso/po-translator-llm/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Yago Veloso",
+    "email": "contato@estudioaany.com.br"
+  },
+  "scripts": {
+    "translate": "bun run src/translate.ts",
+    "translate:openai": "bun run src/translate.ts -p openai",
+    "translate:anthropic": "bun run src/translate.ts -p anthropic",
+    "translate:gemini": "bun run src/translate.ts -p gemini",
+    "help": "bun run src/translate.ts -h",
+    "dev": "bun run --watch src/translate.ts",
+    "build": "bun build src/translate.ts --outdir dist --target bun",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/bun": "^1.2.18",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "enquirer": "^2.4.1",
+    "openai": "^4.47.1",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "bun-types": "^1.2.18",
+    "typescript": "^5.4.5"
+  }
+}

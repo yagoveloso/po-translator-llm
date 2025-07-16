@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+
+#: src/components/Login.tsx
+msgid "Welcome to our application"
+msgstr "Bem-vindo(a) ao nosso aplicativo"
+
+#: src/components/Login.tsx
+msgid "Please enter your credentials"
+msgstr "Por favor, insira suas credenciais"
+
+#: src/components/Dashboard.tsx
+msgid "You have {count, plural, one {1 message} other {# messages}}"
+msgstr "Você tem {count, plural, one {1 mensagem} other {# mensagens}}"
+
+#: src/components/Profile.tsx
+msgid "Edit your <0>profile settings</0> here"
+msgstr "Edite suas <0>configurações de perfil</0> aqui"
+
+#: src/components/Notifications.tsx
+msgid "No notifications available"
+msgstr "Nenhuma notificação disponível"
+
